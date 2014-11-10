@@ -1,0 +1,2 @@
+ideal3: Existence.d Experiment.d Result.d Interaction.d Interaction010.d Interaction020.d Interaction030.d Interaction031.d Existence010.d Existence020.d Existence030.d Existence031.d Anticipation.d Anticipation030.d Anticipation031.d Main.d
+	dmd Existence.d Experiment.d Result.d Interaction.d Interaction010.d Interaction020.d Interaction030.d Interaction031.d Existence010.d Existence020.d Existence030.d Existence031.d Anticipation.d Anticipation030.d Anticipation031.d Main.d -ofideal3
