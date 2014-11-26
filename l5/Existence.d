@@ -9,8 +9,7 @@ import Experiment;
 import Interaction;
 
 import Environment050;
-//import EnvironmentMaze;
-
+import EnvironmentMaze;
 
 class Existence {
 public:
@@ -29,11 +28,12 @@ public:
 	Interaction lastSuperInteraction;
 	Interaction enactedInteraction;
 
-	Environment050 environment;
+	//Environment050 environment;
+	EnvironmentMaze environment;
 	
 	void initExistence(){
-		environment = new Environment050( this );
-		//environment = new EnvironmentMaze(this);
+		//environment = new Environment050( this );
+		environment = new EnvironmentMaze( this );
 	}
 	
 	this(){
