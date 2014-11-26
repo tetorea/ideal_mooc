@@ -3,13 +3,6 @@ import std.string;
 
 import Existence;
 
-/** Uncomment these lines to instantiate other existences: */
-//import existence.Existence030;
-//import existence.Existence031;
-//import existence.Existence032;
-//import existence.Existence040;
-//import existence.Existence050;
-
 /**
  * instantiates an Existence.,
  * runs the Existence step by step in a loop
@@ -17,19 +10,11 @@ import Existence;
  */
 void main( string[] args )
 {
-		/** Change this line to instantiate another existence: */
-		//auto existence = new Existence020();
-		//auto existence = new Existence030();
-		//auto existence = new Existence031();
-		//Existence existence = new Existence032();
-		//auto existence = new Existence040();
-		auto existence = new Existence();
-		//Existence existence = new Existence051();
+	auto existence = new Existence();
 
-		/** Change this line to adjust the number of cycles of the loop: */
-		foreach( i; 0 .. 25 ) {
-			string stepTrace = existence.step();
-			writeln( i,": ", stepTrace );
-		}
+	// Change this line to adjust the number of cycles of the loop:
+	foreach( i; 0 .. 200 ) {
+		string stepTrace = existence.step();
+		writeln( i,": ", stepTrace );
+	}
 }
-
